@@ -1,0 +1,22 @@
+<library>
+  <extends>modm:disco-f303vc</extends>
+  <options>
+    <option name="modm:build:cmake:include_cmakelists">False</option>
+    <option name="modm:build:cmake:include_makefile">False</option>
+  </options>
+  <modules>
+    <module>modm:math:filter</module>
+    <module>modm:processing:protothread</module>
+    <module>modm:processing:timer</module>
+    <module>modm:build:cmake</module>
+    <module>modm:driver:ws2812</module>
+    <module>modm:platform:spi:2</module>
+    <module>modm:ui:led</module>
+    <module>modm:platform:adc:4</module>
+    <module>modm:platform:uart:2</module>
+    <module>modm:debug</module>
+  </modules>
+  <repositories>
+	  <repository><path>submodules/modm/repo.lb</path></repository>
+  </repositories>
+</library>
